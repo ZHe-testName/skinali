@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,KAAK,EAAC,OAAe;CACxB",
+    "sources": [
+        "../../../MyAdvancedProj/MyAdvancedProj/app/scss/mainStyle.scss"
+    ],
+    "names": [],
+    "file": "mainStyle.css"
+}
