@@ -1,0 +1,66 @@
+.navbar
+    &-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        min-height: 80px
+
+    &-landline, &-mobile
+        text-align: right
+    &-phone
+        display: block
+        font-size: 19px
+        +bold
+        text-decoration: none
+        margin-bottom: 5px
+        color: $text-color
+    &-smalltext
+        display: block
+        font-size: 14px
+        color: $text-color-light
+        text-decoration: none
+
+      
+
+.menu
+    &-button 
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: transparent
+        border: none
+        border-right: 1px solid rgba(#510bba, .2)
+        border-left: 1px solid rgba(#510bba, .2)
+        height: 80px
+        width: 70px
+        &-line
+            display: block
+            justify-content: space-between
+            width: 20px
+            height: 3px
+            background-color: #89a9eb
+            margin: 2px 0
+
+.logo
+    &-text
+        font-size: 18px
+        margin-bottom: 5px
+        text-transform: uppercase 
+        display: block
+        +bold
+    &-description
+        display: block
+        font-size: 14px
+        color: $text-color-light
+
+.button-o
+     border: 2px solid $primary
+     padding: 17px 22px
+     text-decoration: uppercase 
+     font-size: 16px
+     +bold
+     color: $primary
+     background-color: transparent
+     
+     
