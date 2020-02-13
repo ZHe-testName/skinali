@@ -1,5 +1,19 @@
 .hero
-    background-color: #f1f1f1
-    border: 1px solid black
-    min-width: 100px
-    min-height: 100px
+    background: #f1f1f1 url(../img/hero/hero-bg.jpg) no-repeat center top 80px
+    background-size: contain
+    padding-top: 160px
+    padding-bottom: 270px
+    &-title
+        display: block
+        font-size: 30px
+        margin-bottom: 35px
+    &-subtitle
+        display: block
+        font-size: 30px
+        margin-bottom: 68px
+        +bold 
+
+@media (max-width: 991px)
+   .hero
+       background-size: cover
+       background-position: top left 32%

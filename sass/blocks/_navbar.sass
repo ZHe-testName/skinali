@@ -1,9 +1,14 @@
 .navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #ffffff
     &-wrap
         display: flex
         align-items: center
         justify-content: space-between
-        min-height: 80px
+        min-height: 60px
 
     &-landline, &-mobile
         text-align: right
@@ -23,6 +28,27 @@
       
 
 .menu
+    position: fixed
+    padding: 16px 0
+    top: 80px
+    width: 100%
+    left: 0
+    background-color: $primary
+    z-index: 0
+    transform: translateY(-200%)
+    transition: all 0.2s
+    &_active
+        transform: translateY(0)
+    &-nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &-link
+        display: block
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 17px
+        color: #ffffff
     &-button 
         display: flex
         flex-direction: column
@@ -41,6 +67,7 @@
             height: 3px
             background-color: #89a9eb
             margin: 2px 0
+       
 
 .logo
     &-text
@@ -64,3 +91,21 @@
      background-color: transparent
      
      
+@media (max-width: 991px)
+   .navbar
+       &-mobile, &-landline
+           display: none
+@media (max-width: 592px)
+   .logo
+       display: none
+   .button-o
+       font-size: 12px
+   .menu
+       top: 60px
+       height: 50%
+       &-button
+           height: 60px
+       &-nav
+           flex-direction: column
+       &-link
+            margin-bottom: 20px
