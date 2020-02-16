@@ -58,6 +58,40 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+.bg-secondary {
+  background-color: #f1f1f1;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #507fe1;
+}
+
+.checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.checkbox-label:hover {
+  cursor: pointer;
+}
+
+.checkbox-label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  margin-right: 20px;
+}
+
 .navbar {
   position: fixed;
   left: 0;
@@ -253,6 +287,128 @@ body {
   .hero {
     background-size: 100%;
     background-position: top right;
+  }
+}
+
+@media (max-width: 592px) {
+  .hero {
+    margin-top: 60px;
+  }
+}
+
+.offer {
+  padding: 129px 0;
+}
+
+.offer-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  margin-bottom: 20px;
+}
+
+.offer-subtitle {
+  font-size: 21px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.offer-block {
+  background: #fff url("../img/form/form-bg.jpg") no-repeat center right;
+  background-size: contain;
+  padding: 80px;
+  margin-top: -200px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  color: #000000;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+  margin-bottom: 25px;
+}
+
+.form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form-label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.form-input {
+  width: 100%;
+  border-right-width: 0px;
+  height: 80px;
+  padding-left: 30px;
+  border: 1px solid #dddddd;
+}
+
+.form-input-last {
+  border-right-width: 1px;
+}
+
+@media (max-width: 1199px) {
+  .offer-block {
+    background-position: center right -120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-title {
+    font-size: 18px;
+  }
+  .offer-subtitle {
+    font-size: 16px;
+  }
+  .offer-block {
+    background: none;
+    background-color: #fff;
+    padding: 40px;
+    margin-top: -300px;
+  }
+  .form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form-row-checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form-group {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+  .offer-title {
+    font-size: 17px;
+  }
+  .offer-subtitle {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

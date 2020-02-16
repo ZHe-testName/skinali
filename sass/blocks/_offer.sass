@@ -1,0 +1,76 @@
+.offer
+    padding: 129px 0
+    &-title
+        font-size: 25px
+        text-transform: uppercase
+        +bold
+        margin-bottom: 20px
+    &-subtitle
+        font-size: 21px
+        display: block
+        margin-bottom: 40px
+    &-block
+       background: #fff url("../img/form/form-bg.jpg") no-repeat center right
+       background-size: contain
+       padding: 80px
+       margin-top: -200px
+       box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+    
+.form
+    color: #000000
+    &-row
+        display: flex
+        align-items: center
+        max-width: 900px
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+    &-label
+        display: block
+        font-size: 17px
+        margin-bottom: 15px
+    &-group
+        flex-basis: 33.33%
+    &-input
+        width: 100%
+        border-right-width: 0px
+        height: 80px
+        padding-left: 30px
+        border: 1px solid #dddddd
+        &-last
+            border-right-width: 1px
+
+@media (max-width: 1199px)
+    .offer
+        &-block
+            background-position: center right -120px
+@media (max-width: 768px)
+    .offer
+        &-title
+            font-size: 18px
+        &-subtitle
+            font-size: 16px
+        &-block
+            background: none
+            background-color: #fff
+            padding: 40px
+            margin-top: -300px
+            
+    .form
+        &-row
+            flex-direction: column
+            &-checkbox
+                flex-direction: row
+        &-group
+            width: 100%
+            flex-basis: 100%
+            margin-bottom: 15px
+@media (max-width: 376px)
+    .offer
+        &-title
+            font-size: 17px
+        &-subtitle
+            font-size: 14px
+
+        
+ 
