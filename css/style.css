@@ -49,6 +49,21 @@ body {
   color: #262626;
 }
 
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section_title {
+  padding-bottom: 100px;
+}
+
 .button {
   padding: 25px 45px;
   text-transform: uppercase;
@@ -409,6 +424,45 @@ input[type="checkbox"]:checked + label::before {
   }
   .offer-subtitle {
     font-size: 14px;
+  }
+}
+
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features-block-item {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 991px) {
+  .features-block-item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 426px) {
+  .features-block-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
