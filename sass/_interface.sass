@@ -1,6 +1,10 @@
 body 
     +light
     color: $text-color
+* h1, h2, h3, span, p
+    cursor: default
+img
+  max-width: 100%
 .section
     padding: 100px 0
     &-title
@@ -16,7 +20,30 @@ body
     border: none
     background-color: $primary
     color: #ffffff
+    text-decoration: none
     +bold
+    &-fitting
+
+        padding: 10px
+        height: 30px
+        color: $primary
+        font-size: 11px
+        background-color: #fff
+        text-transform: uppercase
+        border: none
+    &-add
+        padding: 10px
+        height: 30px
+        color: #ffffff
+        font-size: 11px
+        background-color: lighten($primary, 10%)
+        text-transform: uppercase
+        border: none
+    &-like
+        height: 30px
+        width: 30px
+        background-color: $primary
+        border: none
 .bg-secondary
     background-color: $bg-secondary
 input[type="checkbox"]

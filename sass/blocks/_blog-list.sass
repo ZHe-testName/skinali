@@ -1,0 +1,49 @@
+.blog
+    &-title
+        font-size: 24px
+        +bold
+    &-heading
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 70px
+    &-link
+        &-more
+            color: #507fe1
+            text-decoration-color: #b4b4b4
+    &-list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &-img
+            height: 200px
+            overflow: hidden
+        &-text
+            display: flex
+            justify-content: center
+            align-items: center
+            min-height: 80px
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1)
+        &-card
+            margin-bottom: 20px
+@media (max-width: 1143px)
+    .blog
+        &-list
+            justify-content: space-around
+            &-card
+                margin: 0 50px
+                margin-bottom: 50px
+@media (max-width: 994px)
+    .blog
+        &-list
+            justify-content: space-around
+            &-card
+                margin: 0 30px
+                margin-bottom: 20px
+@media (max-width: 664px)
+    .blog
+        &-heading
+            flex-direction: column
+            align-items: start
+        &-title
+            font-size: 18px
