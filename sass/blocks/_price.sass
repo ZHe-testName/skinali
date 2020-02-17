@@ -1,0 +1,81 @@
+.price
+    &-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &-card
+        position: relative
+        background-color: #fff
+        margin-bottom: 10px
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+        &-pricetag
+            display: flex
+            justify-content: space-between
+        &-txt
+            padding: 20px
+            font-size: 15px
+        &-title
+            margin: 0
+        &-cost
+            color: #000000
+            +bold
+        &-button 
+            position: absolute
+            text-align: center
+            background-color: #fff
+            left: 0
+            bottom: 0
+            width: 100%
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+            height: 80px
+            padding: 20px
+            padding-top: 0
+            opacity: 0
+        &:hover
+            .price-card-button
+                transition: all 0.5s
+                transition-timing-function: ease-out
+                bottom: -80px
+                opacity: 1
+                z-index: 98
+@media (max-width: 1200px)
+    .price
+        &-title
+            margin-top: 0
+        &-block
+            justify-content: space-around
+        &-card
+           flex-basis: 45%
+           &-img
+               img 
+                 width: 100%
+@media (max-width: 770px)
+    .price
+        &-block
+            justify-content: center
+        &-card
+            margin-left: 20px
+        &-title
+            margin-bottom: 20px
+            font-size: 20px
+@media (max-width: 590px)
+    .price
+        &-card
+            flex-basis: 80%
+            margin: 0
+            margin-bottom: 15px
+            &-img
+                img
+                  max-height: 60%
+@media (max-width: 351px)
+    .price
+        &-card
+            flex-basis: 100%
+
+
+
+
+
+
+
+         
