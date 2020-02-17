@@ -1,5 +1,4 @@
 .offer
-    padding: 129px 0
     &-title
         font-size: 25px
         text-transform: uppercase
@@ -9,12 +8,15 @@
         font-size: 21px
         display: block
         margin-bottom: 40px
+        max-width: 80%
     &-block
        background: #fff url("../img/form/form-bg.jpg") no-repeat center right
        background-size: contain
        padding: 80px
        margin-top: -200px
        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+       &-next
+           background: #fff url("../img/formNext/form-next.png") no-repeat center right
     
 .form
     color: #000000
@@ -31,19 +33,27 @@
         margin-bottom: 15px
     &-group
         flex-basis: 33.33%
+    &-par
+        font-size: 17px
+        max-width: 450px
+        margin-left: 30px
     &-input
         width: 100%
         border-right-width: 0px
         height: 80px
         padding-left: 30px
         border: 1px solid #dddddd
-        &-last
+        &:last-child
             border-right-width: 1px
 
 @media (max-width: 1199px)
     .offer
         &-block
             background-position: center right -120px
+@media (max-width: 992px)
+    .form
+        &-par
+            display: none
 @media (max-width: 768px)
     .offer
         &-title
