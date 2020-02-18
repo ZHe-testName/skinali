@@ -1,0 +1,29 @@
+.contact
+    background-color: #f6f7f9
+    &-block
+        display: flex
+        justify-content: center
+        &-item
+            display: flex
+            flex-direction: column
+            flex-basis: 33%
+            justify-content: center
+            align-items: center
+        &-img
+            margin-bottom: 25px
+        &-txt
+            text-align: center
+        &-link
+            font-size: 16px
+            color: #000000
+            text-decoration: none
+@media (max-width: 768px)
+    .contact
+        &-block
+            flex-direction: column
+            &-item
+                width: 100%
+                margin-bottom: 30px
+            &-link
+                max-width: 200px
+                margin: auto

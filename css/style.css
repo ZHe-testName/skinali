@@ -148,6 +148,10 @@ input[type="checkbox"]:checked + label::before {
   margin-right: 20px;
 }
 
+.map {
+  overflow: hidden;
+}
+
 .navbar {
   position: fixed;
   left: 0;
@@ -1098,6 +1102,68 @@ input[type="checkbox"]:checked + label::before {
   .factory-block-img img {
     width: 100%;
     max-height: 380px;
+  }
+}
+
+.contact {
+  background-color: #f6f7f9;
+}
+
+.contact-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-block-img {
+  margin-bottom: 25px;
+}
+
+.contact-block-txt {
+  text-align: center;
+}
+
+.contact-block-link {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .contact-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-block-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact-block-link {
+    max-width: 200px;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
