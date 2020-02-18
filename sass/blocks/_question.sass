@@ -1,0 +1,22 @@
+.question
+    background-color: #fafbfc
+    padding: 55px 0
+    &-block
+        display: flex
+        justify-content: center
+        align-items: center
+    &-title
+        font-size: 30px
+        margin-right: 40px
+        +bold
+    &-link
+        color: #507fe1
+        text-decoration-color: #b4b4b4 
+@media (max-width: 768px)
+    .question
+        &-block
+           flex-direction: column
+        &-title
+           font-size: 23px
+           margin-bottom: 35px
+           margin-right: 0px   

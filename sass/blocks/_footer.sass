@@ -1,0 +1,51 @@
+.footer
+    background-color: #262626
+    padding: 40px
+    color: #ffffff
+    &-block
+        display: flex
+        justify-content: space-between
+    a
+        color: #ffffff
+        text-decoration: none
+    &-title
+        margin-top: 0
+        margin-bottom: 7px
+        font-size: 18px
+        text-transform: uppercase
+        +bold
+    &-subtitle
+        display: block
+        margin-bottom: 48px
+    &-copy
+        color: #767676
+    &-payinfo
+        img 
+            margin: 15px
+ 
+    &-phone
+        display: block
+        font-size: 20px
+        padding-bottom: 19px
+        +bold
+    &-mail
+        display: block
+        font-size: 16px
+        padding-bottom: 23px
+        text-align: right
+    &-social
+        text-align: right
+        &-link
+            margin-left: 13px
+@media (max-width: 993px)
+    .footer
+        &-block
+            flex-direction: column
+            align-items: center
+            text-align: center
+        &-contacts
+            display: flex
+            flex-direction: column
+            align-items: center
+
+
