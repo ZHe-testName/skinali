@@ -505,6 +505,9 @@ input[type="checkbox"]:checked + label::before {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .form-input {
+    padding: 0px;
+  }
   .form-input:not(.button) {
     height: 40px;
   }
@@ -691,9 +694,7 @@ input[type="checkbox"]:checked + label::before {
     font-size: 24px;
   }
   .catalog-button-link {
-    height: 50px;
-    padding: 21px 25px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .catalog-button-txt {
     font-size: 12px;
