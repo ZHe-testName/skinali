@@ -505,6 +505,9 @@ input[type="checkbox"]:checked + label::before {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .form-input:not(.button) {
+    height: 40px;
+  }
 }
 
 .features {
@@ -542,6 +545,7 @@ input[type="checkbox"]:checked + label::before {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 50px;
+    padding-bottom: 0;
   }
   .section {
     padding: 60px 0;
@@ -985,14 +989,16 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 650px) {
   .step {
     width: 100%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   .section_title {
     font-size: 20px;
   }
 }
 
-@media (max-width: 457px) {
-  .step-block {
+@media (max-width: 451px) {
+  .steps-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
