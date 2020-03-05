@@ -1011,6 +1011,11 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+.before-after {
+  max-width: 640px;
+  margin: auto;
+}
+
 .reviews {
   background-color: #f5f6f8;
   padding-bottom: 330px;
