@@ -698,6 +698,10 @@ input[type="checkbox"]:checked + label::before {
   .catalog-button-txt {
     font-size: 12px;
   }
+  .tag {
+    top: 0px;
+    left: 0px;
+  }
 }
 
 .blog {
