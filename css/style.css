@@ -1016,6 +1016,12 @@ input[type="checkbox"]:checked + label::before {
   margin: auto;
 }
 
+.arrow-left {
+  border: 20px solid transparent;
+  border-right: 20px solid black;
+  background-color: transparent;
+}
+
 .reviews {
   background-color: #f5f6f8;
   padding-bottom: 330px;
