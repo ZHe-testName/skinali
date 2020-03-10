@@ -260,6 +260,14 @@ input[type="checkbox"]:checked + label::before {
   width: 70px;
 }
 
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.menu-button:focus {
+  outline: none;
+}
+
 .menu-button-line {
   display: block;
   -webkit-box-pack: justify;
@@ -299,6 +307,16 @@ input[type="checkbox"]:checked + label::before {
 
 .button-o:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1126px) {
+  .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 991px) {
@@ -439,6 +457,55 @@ input[type="checkbox"]:checked + label::before {
 
 .form-input:last-child {
   border-right-width: 1px;
+}
+
+.select {
+  width: 100%;
+  border-right-width: 0px;
+  height: 80px;
+  border: 1px solid #dddddd;
+  position: relative;
+}
+
+.select:after {
+  position: absolute;
+  content: "";
+  background-color: #c0c0c0;
+  top: 40%;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.select-checked {
+  line-height: 80px;
+  padding-left: 30px;
+}
+
+.select-dropdown {
+  position: absolute;
+  visibility: hidden;
+  top: 80px;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #dddddd;
+  background-color: #fff;
+  margin: 0;
+  list-style: none;
+}
+
+.select-dropdown-active {
+  visibility: visible;
+}
+
+.select-option {
+  padding-top: 10px;
+}
+
+.select-option:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
 }
 
 @media (max-width: 1199px) {
@@ -595,6 +662,13 @@ input[type="checkbox"]:checked + label::before {
   margin-bottom: 35px;
   -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+
+.catalog-card:hover .catalog-card-buttons {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
 }
 
 .catalog-card-image {
@@ -608,6 +682,11 @@ input[type="checkbox"]:checked + label::before {
   position: absolute;
   bottom: 0;
   right: 0;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 .catalog-button-big {
@@ -1016,9 +1095,73 @@ input[type="checkbox"]:checked + label::before {
   margin: auto;
 }
 
+.before-slider {
+  z-index: 76;
+}
+
+.before-slider-dots {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.before-slider-dots li {
+  width: 10px;
+  height: 10px;
+  background-color: #999999;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.before-slider-dots li.slick-active {
+  background-color: #5b7fdd;
+}
+
+.before-slider-dots button {
+  display: none;
+}
+
+.before-slider-wrap {
+  position: relative;
+  max-height: 630px;
+}
+
+.before-slider-arrows {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 23%;
+  padding: 0 15%;
+  z-index: 75;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
 .arrow-left {
   border: 20px solid transparent;
-  border-right: 20px solid black;
+  border-right: 20px solid #bebfc0;
+  background-color: transparent;
+}
+
+.arrow-right {
+  border: 20px solid transparent;
+  border-left: 20px solid #bebfc0;
   background-color: transparent;
 }
 

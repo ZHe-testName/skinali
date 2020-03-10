@@ -17,6 +17,11 @@
         position: relative
         margin-bottom: 35px
         box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1)
+        overflow-y: hidden
+        &:hover
+            .catalog-card-buttons
+                transform: translate(0)
+                opacity: 1
         &-image
             display: block
         &-buttons
@@ -24,6 +29,9 @@
             position: absolute
             bottom: 0
             right: 0
+            opacity: 0
+            transition: 0.4s
+            transform: translateY(100px)
     &-button
         &-big
             display: flex

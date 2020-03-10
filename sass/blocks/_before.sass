@@ -2,8 +2,44 @@
    &-after
       max-width: 640px
       margin: auto
+   &-slider
+      z-index: 76
+      &-dots
+         margin: auto
+         display: flex
+         justify-content: center
+         align-items: center
+         list-style: none
+         padding: 0
+         li
+            width: 10px
+            height: 10px
+            background-color: #999999
+            border-radius: 50%
+            margin: 5px
+            &.slick-active
+               background-color: #5b7fdd
+         button
+            display: none
+      &-wrap
+         position: relative
+         max-height: 630px
+      &-arrows
+         position: absolute
+         width: 100%
+         display: flex
+         justify-content: space-between
+         top: 23%
+         padding: 0 15%
+         z-index: 75
 .arrow
+   &:focus
+      outline: none
    &-left
       border: 20px solid transparent
-      border-right: 20px solid black
+      border-right: 20px solid #bebfc0
+      background-color: transparent
+   &-right
+      border: 20px solid transparent
+      border-left: 20px solid #bebfc0
       background-color: transparent

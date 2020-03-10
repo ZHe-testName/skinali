@@ -63,6 +63,10 @@
         border-left: 1px solid rgba(#510bba, .2)
         height: 80px
         width: 70px
+        &:hover
+            cursor: pointer
+        &:focus
+            outline: none
         &-line
             display: block
             justify-content: space-between
@@ -95,6 +99,11 @@
      text-decoration: none
      &:hover
          cursor: pointer
+@media (max-width: 1126px)
+    .menu
+        &-nav
+            display: flex
+            flex-wrap: wrap
 @media (max-width: 991px)
    .navbar
        &-mobile, &-landline

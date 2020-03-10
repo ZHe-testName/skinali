@@ -45,6 +45,42 @@
         border: 1px solid #dddddd
         &:last-child
             border-right-width: 1px
+.select
+    width: 100%
+    border-right-width: 0px
+    height: 80px
+    border: 1px solid #dddddd
+    position: relative
+    &:after
+        position: absolute
+        content: ""
+        background-color: #c0c0c0
+        top: 40%
+        right: 20px
+        width: 20px
+        height: 20px
+        cursor: pointer
+    &-checked
+        line-height: 80px
+        padding-left: 30px
+    &-dropdown
+        position: absolute
+        visibility: hidden
+        top: 80px
+        width: 100%
+        padding: 0
+        border: 1px solid #dddddd
+        background-color: #fff
+        margin: 0
+        list-style: none
+        &-active
+            visibility: visible
+    &-option
+        padding-top: 10px
+        &:hover
+            cursor: pointer
+            background-color: $bg-secondary
+
 
 @media (max-width: 1199px)
     .offer
