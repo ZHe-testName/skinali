@@ -15,12 +15,12 @@
         <div class="container">
             <nav class="menu-nav">
                 <a href="#" class="menu-link">Главная</a>
-                <a href="#" class="menu-link">Продукция</a>
-                <a href="#" class="menu-link">Каталог</a>
-                <a href="#" class="menu-link">Примеры работ</a>
-                <a href="#" class="menu-link">Примерка изображений</a>
-                <a href="#" class="menu-link">Стоимость дилерам</a>
-                <a href="#" class="menu-link">O скинали</a>
+                <a href="#features" class="menu-link">Приемущества</a>
+                <a href="#catalog" class="menu-link">Каталог</a>
+                <a href="#steps" class="menu-link">Этапы работ</a>
+                <a href="#before" class="menu-link">Примерка изображений</a>
+                <a href="#price" class="menu-link">Стоимость дилерам</a>
+                <a href="#factory" class="menu-link">O скинали</a>
             </nav>
         </div>
         <!-- /.container -->
@@ -46,7 +46,7 @@
                    <a href="+79121234567" class="navbar-phone">+7 499 123-45-67</a>
                    <a class="navbar-email navbar-smalltext" href="mailto:info@mail.cu">info@mail.cu</a>
                </div>
-               <button class="button-o navbar-button">Получить консультацию</button>
+               <a href="#offer" class="button-o navbar-button">Получить консультацию</a>
            </div>
          </div> 
            <!-- /.container -->
@@ -58,7 +58,7 @@
                 Гарантия <br>минимальной цены<br> на скиналли
             </h1>
             <span class="hero-subtitle">от 3000 р\м2</span>
-            <button class="button hero-button">Заказать скинали</button>
+            <a href="#offer" class="button hero-button">Заказать скинали</a>
         </div>
         <!-- /.container -->
     </div>
@@ -67,7 +67,7 @@
    <!-- /.header -->
 
    <main>
-       <section class="offer bg-secondary">
+       <section class="offer bg-secondary" id="offer">
            <div class="container">
                <div class="offer_block offer-block">
                    <h2 class="offer-title">ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЕТ</h2>
@@ -92,13 +92,13 @@
                         <div class="form-group">
                             <lable class="form-label">Ширина, см</lable>
                          <!-- /.form-label -->
-                            <input type="text" class="form-input">
+                            <input type="number" class="form-input">
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
                             <lable class="form-label">Высота, см</lable>
                             <!-- /.form-label -->
-                            <input type="text" class="form-input form-input-last">
+                            <input type="number" class="form-input form-input-last">
                         </div>
                         <!-- /.form-group -->
                     </div>
@@ -135,7 +135,7 @@
            <!-- /.container -->
        </section>
        <!-- /.offer -->
-       <section class="features section">
+       <section class="features section" id="features">
            <div class="container">
                <h2 class="section-title section_title">Наши приемущества</h2>
                <div class="features-block">
@@ -182,7 +182,7 @@
        </section>
        <!-- /.features section -->
        <section>
-           <div class="section catalog">
+           <div class="section catalog" id="catalog">
                <div class="container">
                 <div class="catalog-block-title">
                     <h2 class="catalog-block_title">Каталог скинали</h2>
@@ -358,7 +358,7 @@
            <!-- /.container -->
        </section>
        <!-- /.section blog -->
-       <section class="section">
+       <section class="section" id="price">
            <div class="container">
                <h2 class="section-title price-title">Цены и виды скинали</h2>
                <!-- /.section-title section_title -->
@@ -505,7 +505,7 @@
            <!-- /.container -->
        </section>
        <!-- /.section -->
-       <section class="section steps">
+       <section class="section steps" id="steps">
            <div class="container">
                <h2 class="section-title section_title">Этапы работ</h2>
                <!-- /.section-title section_title -->
@@ -574,7 +574,7 @@
            <!-- /.container -->
        </section>
        <!-- /.section steps -->
-       <section class="section before">
+       <section class="section before" id="before">
            <div class="container">
                     <h2 class="section-title section_title">До и после</h2>
                <!-- /.section-title section_title -->
@@ -691,11 +691,11 @@
                       </div>
                      <!-- /.form-group -->
                      <div class="form-group">
-                         <input type="text" class="form-input" placeholder="Ваш телефон">
+                         <input type="tel" class="form-input" placeholder="Ваш телефон">
                      </div>
                      <!-- /.form-group -->
                      <div class="form-group">
-                         <input type="text" class="form-input" placeholder="Ваша цена">
+                         <input type="number" class="form-input" placeholder="Ваша цена">
                      </div>
                      <!-- /.form-group -->
                  </div>
@@ -716,7 +716,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <section class="section factory">
+    <section class="section factory" id="factory">
         <div class="container">
             <h2 class="section-title section_title">О производстве</h2>
             <!-- /.factory-title factory_title -->
@@ -857,6 +857,7 @@
     <!-- Подключение виджета spikmi для обратной связи через соцсети -->
    <script type="text/javascript" src="https://spikmi.com/Widget?Id=2711"></script>
    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="./script/script/jquery.maskedinput.js"></script>
    <script src="./script/script/jquery.twentytwenty.js"></script>
    <script src="./script/script/jquery.event.move.js"></script>
    <script src="./script/script/slick.js"></script>
