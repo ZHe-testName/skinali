@@ -17,7 +17,7 @@ $(window).load(function() {
         console.log("Я сработала");
         let _width = $(this).width();
         let _item = $(".review-slider-item");
-        if(_width <= 595){
+        if(_width <= 626){
             $(".review-slider").slick({
                 draggable: false,
                 dots: true,

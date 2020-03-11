@@ -1241,6 +1241,11 @@ input[type="checkbox"]:checked + label::before {
   padding-bottom: 330px;
 }
 
+.review-wrap {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
 .review-slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1301,6 +1306,13 @@ input[type="checkbox"]:checked + label::before {
 .review-slider-name {
   font-size: 14px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+@media (max-width: 626px) {
+  .review-wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .factory-block {
