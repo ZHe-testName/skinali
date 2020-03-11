@@ -69,7 +69,7 @@ img {
 }
 
 .section_title {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .button {
@@ -1182,6 +1182,7 @@ input[type="checkbox"]:checked + label::before {
   background-color: #999999;
   border-radius: 50%;
   margin: 5px;
+  cursor: pointer;
 }
 
 .before-slider-dots li.slick-active {
@@ -1212,6 +1213,7 @@ input[type="checkbox"]:checked + label::before {
 
 .arrow {
   position: absolute;
+  cursor: pointer;
 }
 
 .arrow:focus {
