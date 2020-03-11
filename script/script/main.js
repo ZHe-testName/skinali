@@ -11,7 +11,24 @@ $(window).load(function() {
         nextArrow: $(".arrow-right")
     });
 
-    /*НастроЙКА меню*/
+    /*Настройка включкния слайдера с отзывами*/
+
+    $(document).ready(function(){
+        console.log("Я сработала");
+        let _width = $(this).width();
+        let _item = $(".review-slider-item");
+        if(_width <= 595){
+            $(".review-slider").slick({
+                draggable: false,
+                dots: true,
+                dotsClass: "before-slider-dots",
+                prevArrow: $(".arrow-left"),
+                nextArrow: $(".arrow-right")
+            });
+        };
+    });
+  
+    /*Настройка меню*/
 
     $(".menu-button").on("click", function(){
         $(".menu").toggleClass("menu_active");
