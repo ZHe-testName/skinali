@@ -15,6 +15,10 @@ $(window).load(function() {
 
     $(".menu-button").on("click", function(){
         $(".menu").toggleClass("menu_active");
+        /*Настройка анимации гамбургера меню*/
+        let lines = $(".menu-button-line");
+        $(lines).toggleClass("menu-button-line-active");
+
     });
 
      /*Настройка select*/
@@ -36,6 +40,21 @@ $(window).load(function() {
     /*Jquery mask*/
 
     $("[type='tel']").mask("+7 (999) 999-999-99");
+
+    /*Настройка загрузки карты.
+    Для ускорения загрузки сайта,
+    загружаем карту толко когда пользователь докрутит до нее.*/
+
+    let reviews = $(".reviews");
+    let reviewsTop = reviews.offset().top;
+    $(window).bind("scroll", function(){
+        let windowTop = $(this).scrollTop();
+        if(windowTop > reviewsTop){
+            //$("#map").html();
+            console.log('Докручено.');
+            $(window).unbind('scroll');
+        }
+    })
 
 
 });

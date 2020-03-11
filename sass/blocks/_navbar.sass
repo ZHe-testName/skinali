@@ -70,13 +70,46 @@
             outline: none
         &-line
             display: block
-            justify-content: space-between
-            width: 20px
+            width: 25px
             height: 3px
             background-color: #89a9eb
             margin: 2px 0
-       
-
+            transition: background 0s
+            transition-property: background
+            transition-delay: 0.3s
+            transition-duration: 0.3s
+            &::before,
+            &::after
+                display: block
+                content: ""
+                position: absolute
+                width: 25px
+                height: 3px
+                background-color: #89a9eb
+                margin: 2px 0
+                margin-left: auto
+                margin-right: auto
+                transition-duration: 0.3s, 0.3s
+                transition-delay: 0.3s, 0  
+            &::after
+                bottom: 30px
+                transition-property: bottom, transform
+                transition-delay: 0s, 0.3s
+            &::before
+                top: 30px
+                transition-property: top, transform
+                transition-delay: 0s, 0.3s
+            &-active
+                transition-delay: 0s
+                transition-duration: 0s
+                background: none
+                &::after
+                    bottom: 37px
+                    transform: rotate(-45deg)
+                &::before
+                    top: 36px
+                    transform: rotate(45deg)
+                    
 .logo
     &-text
         font-size: 18px
