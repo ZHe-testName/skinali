@@ -1210,6 +1210,10 @@ input[type="checkbox"]:checked + label::before {
   padding: 0 15%;
 }
 
+.arrow {
+  position: absolute;
+}
+
 .arrow:focus {
   outline: none;
 }
@@ -1218,12 +1222,16 @@ input[type="checkbox"]:checked + label::before {
   border: 20px solid transparent;
   border-right: 10px solid #bebfc0;
   background-color: transparent;
+  left: 10%;
+  top: 40%;
 }
 
 .arrow-right {
   border: 20px solid transparent;
   border-left: 10px solid #bebfc0;
   background-color: transparent;
+  right: 10%;
+  top: 40%;
 }
 
 .reviews {
