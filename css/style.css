@@ -410,6 +410,15 @@ input[type="checkbox"]:checked + label::before {
   .menu-link {
     margin-bottom: 20px;
   }
+  .menu-button-line-active::before {
+    top: 23px;
+  }
+  .menu-button-line-active::after {
+    bottom: 23px;
+  }
+  .menu-button-line::before, .menu-button-line::after {
+    margin: 6px 0;
+  }
 }
 
 .hero {
@@ -1255,15 +1264,15 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 576px) {
-  .before {
-    padding-bottom: 0;
-  }
   .slick-list {
     height: 75%;
   }
 }
 
 @media (max-width: 426px) {
+  .before {
+    padding-bottom: 0;
+  }
   .before-slider-dots {
     position: absolute;
     top: 60%;
