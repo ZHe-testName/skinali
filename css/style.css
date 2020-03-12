@@ -420,17 +420,17 @@ input[type="checkbox"]:checked + label::before {
   .menu-link {
     margin-bottom: 8px;
   }
+  .menu-button-line::before {
+    top: 36px;
+  }
+  .menu-button-line::after {
+    bottom: 37px;
+  }
   .menu-button-line-active::before {
     top: 24px;
   }
   .menu-button-line-active::after {
-    bottom: 23px;
-  }
-  .menu-button-line::before {
-    margin: 5px 0;
-  }
-  .menu-button-line::after {
-    margin: 5px 0;
+    bottom: 29px;
   }
 }
 
