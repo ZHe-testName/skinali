@@ -2,6 +2,25 @@
     background-color: #f5f6f8
     padding-bottom: 330px
 .review
+    &-slider
+        &-dots
+            margin: auto
+            display: flex
+            justify-content: center
+            align-items: center
+            list-style: none
+            padding: 0
+            li
+                width: 10px
+                height: 10px
+                background-color: #999999
+                border-radius: 50%
+                margin: 5px
+                cursor: pointer
+                &.slick-active
+                    background-color: #5b7fdd
+            button
+                display: none
     &-wrap
         flex-basis: 30%
     &-slider

@@ -14,14 +14,12 @@ $(window).load(function() {
     /*Настройка включкния слайдера с отзывами*/
 
     $(document).ready(function(){
-        console.log("Я сработала");
         let _width = $(this).width();
-        let _item = $(".review-slider-item");
         if(_width <= 626){
             $(".review-slider").slick({
                 draggable: false,
                 dots: true,
-                dotsClass: "before-slider-dots",
+                dotsClass: "review-slider-dots",
                 prevArrow: $(".arrow-left"),
                 nextArrow: $(".arrow-right")
             });
