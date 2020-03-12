@@ -42,7 +42,7 @@
     &_active
         transform: translateY(0)
         opacity: 1
-        z-index: 99
+        z-index: 99  
     &-nav
         display: flex
         align-items: center
@@ -73,7 +73,7 @@
             width: 25px
             height: 3px
             background-color: #89a9eb
-            margin: 2px 0
+            margin: 0
             transition: background 0s
             transition-property: background
             transition-delay: 0.3s
@@ -138,10 +138,19 @@
         &-nav
             display: flex
             flex-wrap: wrap
+            justify-content: space-between
 @media (max-width: 991px)
-   .navbar
-       &-mobile, &-landline
-           display: none
+    .navbar
+        &-mobile, 
+        &-landline
+            display: none
+    .menu
+        &-link
+            flex-basis: 50%
+            margin-bottom: 10px
+            &:nth-child(2n)
+                text-align: right
+                
 @media (max-width: 592px)
    .logo
        display: none
@@ -149,23 +158,23 @@
        font-size: 12px
    .menu
        top: 60px
-       height: 50%
        &-button
            height: 60px
        &-nav
            flex-direction: column
        &-link
-            margin-bottom: 20px
+            margin-bottom: 8px
        &-button
             &-line
                 &-active
                     &::before
-                        top: 23px
+                        top: 24px
                     &::after
                         bottom: 23px
-                &::before,
+                &::before
+                    margin: 5px 0
                 &::after
-                    margin: 6px 0
+                    margin: 5px 0
 
 
             

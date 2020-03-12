@@ -24,7 +24,7 @@
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 32px;
   }
 }
 
@@ -274,7 +274,7 @@ input[type="checkbox"]:checked + label::before {
   width: 25px;
   height: 3px;
   background-color: #89a9eb;
-  margin: 2px 0;
+  margin: 0;
   -webkit-transition: background 0s;
   transition: background 0s;
   -webkit-transition-property: background;
@@ -378,12 +378,23 @@ input[type="checkbox"]:checked + label::before {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-mobile, .navbar-landline {
     display: none;
+  }
+  .menu-link {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 10px;
+  }
+  .menu-link:nth-child(2n) {
+    text-align: right;
   }
 }
 
@@ -396,7 +407,6 @@ input[type="checkbox"]:checked + label::before {
   }
   .menu {
     top: 60px;
-    height: 50%;
   }
   .menu-button {
     height: 60px;
@@ -408,16 +418,19 @@ input[type="checkbox"]:checked + label::before {
             flex-direction: column;
   }
   .menu-link {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
   .menu-button-line-active::before {
-    top: 23px;
+    top: 24px;
   }
   .menu-button-line-active::after {
     bottom: 23px;
   }
-  .menu-button-line::before, .menu-button-line::after {
-    margin: 6px 0;
+  .menu-button-line::before {
+    margin: 5px 0;
+  }
+  .menu-button-line::after {
+    margin: 5px 0;
   }
 }
 
