@@ -1,10 +1,12 @@
 $(window).load(function() {
     $(".before-after").twentytwenty({
         before_label: 'Без скинали', // Set a custom before label
-        after_label: 'Со скинали' // Set a custom after label
+        after_label: 'Со скинали', // Set a custom after label
+        click_to_move: true
     });
     $(".before-slider").slick({
         draggable: false,
+        swipe: false,
         dots: true,
         dotsClass: "before-slider-dots",
         prevArrow: $(".arrow-left"),
