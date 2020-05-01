@@ -53,10 +53,6 @@ body {
   cursor: default;
 }
 
-img {
-  max-width: 100%;
-}
-
 .section {
   padding: 100px 0;
 }
